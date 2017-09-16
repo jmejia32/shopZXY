@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zapatos ZXY</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="tipozapato_clasico">Clásico</string>
+    <string name="tipozapato_zapatilla">Zapatilla</string>
+    <string name="marca">Marca</string>
+    <string name="calzadopara">Calzado para</string>
+    <string name="tipozapato">Tipo de zapato</string>
+    <string name="valor">Valor</string>
+    <string name="cantidad">Cantidad a comprar</string>
+    <string name="valor_total">Total Compra</string>
+    <string name="item_seleccione">[Seleccione]</string>
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Shop ZXY</string>
+    <string name="hombre">Gentleman</string>
+    <string name="mujer">Woman</string>
+    <string name="tipozapato_clasico">Classic</string>
+    <string name="tipozapato_zapatilla">Slipper</string>
+    <string name="marca">Brand</string>
+    <string name="marca_nike" translatable="false">Nike</string>
+    <string name="marca_adidas" translatable="false">Adidas</string>
+    <string name="marca_puma" translatable="false">Puma</string>
+    <string name="calzadopara">Find shoe for</string>
+    <string name="tipozapato">Shoe type</string>
+    <string name="valor">Price</string>
+    <string-array name="sexo">
+        <item>@string/hombre</item>
+        <item>@string/mujer</item>
+    </string-array>
+    <string-array name="tiposZapato">
+        <item>@string/tipozapato_clasico</item>
+        <item>@string/tipozapato_zapatilla</item>
+    </string-array>
+    <string-array name="marcas">
+        <item>@string/marca_adidas</item>
+        <item>@string/marca_nike</item>
+        <item>@string/marca_puma</item>
+    </string-array>
+    <string name="cantidad">Quantity to buy</string>
+    <string name="valor_total">Total Purchase</string>
+    <string name="item_seleccione">[Choose an Option]</string>
+</resources>
