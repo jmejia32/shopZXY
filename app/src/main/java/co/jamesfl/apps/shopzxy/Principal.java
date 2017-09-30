@@ -44,16 +44,6 @@ public class Principal extends AppCompatActivity {
         npCant.setMaxValue(20);
         npCant.setWrapSelectorWheel(true);
         src = getResources();
-        precios = new int[][][] {
-                { //Hombre
-                        {120000, 140000, 130000}, //Zapatillas (Nike, Adidas, Puma)
-                        {50000, 80000, 100000}, //Clásicos (Nike, Adidas, Puma)
-                },
-                { //Mujer
-                        {100000, 130000, 110000}, //Zapatillas (Nike, Adidas, Puma)
-                        {60000, 70000, 120000}, //Clásicos (Nike, Adidas, Puma)
-                }
-        };
         ArrayAdapter<String> adpSexo = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
         adpSexo.add(src.getString(R.string.item_seleccione));
         adpSexo.addAll(src.getStringArray(R.array.sexo));
@@ -103,9 +93,9 @@ public class Principal extends AppCompatActivity {
         if (spSexo.getSelectedItemPosition() > 0 &&
                 spTipoZ.getSelectedItemPosition() > 0 &&
                 spMarca.getSelectedItemPosition() > 0) {
-            int valor = precios[spSexo.getSelectedItemPosition() - 1]
-                                [spTipoZ.getSelectedItemPosition() - 1]
-                                [spMarca.getSelectedItemPosition() - 1];
+            int valor = Metodos.calcularTotal(spSexo.getSelectedItemPosition() - 1,
+                    spTipoZ.getSelectedItemPosition() - 1,
+                    spMarca.getSelectedItemPosition() - 1, 1);
             tvValor.setText(df.format(valor));
             cambioNp.onValueChange(npCant, 0, npCant.getValue());
         } else {

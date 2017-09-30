@@ -16,12 +16,12 @@
         <item>@string/mujer</item>
     </string-array>
     <string-array name="tiposZapato">
-        <item>@string/tipozapato_clasico</item>
         <item>@string/tipozapato_zapatilla</item>
+        <item>@string/tipozapato_clasico</item>
     </string-array>
     <string-array name="marcas">
-        <item>@string/marca_adidas</item>
         <item>@string/marca_nike</item>
+        <item>@string/marca_adidas</item>
         <item>@string/marca_puma</item>
     </string-array>
     <string name="cantidad">Quantity to buy</string>
